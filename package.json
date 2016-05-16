@@ -1,7 +1,7 @@
 {
   "name": "amp",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cd static; gulp watch",
@@ -9,30 +9,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wangcpsnow/koa2-mysql"
+    "url": "git+https://github.com:wangcpsnow/koa2-mysql.git"
   },
   "author": "wangcpsnow",
-  "license": "ISC",
+  "keywords": [
+    "koa2",
+    "mysql",
+    "curd"
+  ],
+  "license": "MIT",
   "dependencies": {
-    "co": "^4.6.0",
-    "co-mysql": "^1.0.0",
-    "codemirror": "^5.14.2",
-    "fs": "0.0.2",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-3": "^6.3.13",
+    "babel-register": "^6.7.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "gulp-util": "^3.0.7",
-    "https": "^1.0.0",
-    "jquery": "^2.2.3",
-    "js-beautify": "^1.6.2",
     "koa": "^2.0.0",
-    "koa-better-body": "^2.0.0",
-    "koa-convert": "^1.2.0",
-    "koa-generic-session": "^1.10.2",
-    "koa-logger": "^1.3.0",
-    "koa-router": "^7.0.1",
-    "koa-send": "^3.2.0",
-    "koa-static": "^2.0.0",
-    "koa2-cookie-session": "0.0.1",
     "ldapjs": "^1.0.0",
-    "moment": "^2.13.0",
-    "mysql": "^2.10.2"
+    "mysql": "^2.10.2",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
   }
 }

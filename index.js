@@ -1,4 +1,6 @@
 /**
+ * @author wangcpsnow
+ * @email wangcpsnow@gmail.com
  * @fileoverview koa2 mysql middleview
  */
 
