@@ -21212,7 +21212,7 @@ this.require.define({"pokeball/components/modal":function(exports, require, modu
   modalImageSelectorDialog = Handlebars.templates["pokeball/components/modal/modal-image-selector"];
 
   Modal = (function() {
-    function Modal(options) {
+    function Modal(options,attrs) {
       this.options = options;
       if (this.options["toggle"] === "image-selector") {
         this.modal = $(modalImageSelectorDialog(this.options));
@@ -21221,7 +21221,7 @@ this.require.define({"pokeball/components/modal":function(exports, require, modu
       if (this.options["icon"]) {
         this.modal = $(modalDialog(this.options));
       } else {
-        this.modal = $(this.options);
+        this.modal = $(this.options);this.options = attrs || {};
         this.isHide = !new RegExp('^<(!|/)?(.|\n)*?>').test(this.options);
       }
     }
